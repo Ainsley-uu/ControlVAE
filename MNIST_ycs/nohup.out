@@ -1,0 +1,24 @@
+/home/student/anaconda3/envs/torch-a4000/lib/python3.9/site-packages/visdom/server.py:39: DeprecationWarning: zmq.eventloop.ioloop is deprecated in pyzmq 17. pyzmq now works with default tornado and asyncio eventloops.
+  ioloop.install()  # Needs to happen before any tornado imports!
+Traceback (most recent call last):
+  File "/home/student/anaconda3/envs/torch-a4000/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/student/anaconda3/envs/torch-a4000/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/student/anaconda3/envs/torch-a4000/lib/python3.9/site-packages/visdom/server.py", line 1922, in <module>
+    download_scripts_and_run()
+  File "/home/student/anaconda3/envs/torch-a4000/lib/python3.9/site-packages/visdom/server.py", line 1918, in download_scripts_and_run
+    main()
+  File "/home/student/anaconda3/envs/torch-a4000/lib/python3.9/site-packages/visdom/server.py", line 1910, in main
+    start_server(port=FLAGS.port, hostname=FLAGS.hostname, base_url=base_url,
+  File "/home/student/anaconda3/envs/torch-a4000/lib/python3.9/site-packages/visdom/server.py", line 1791, in start_server
+    app.listen(port, max_buffer_size=1024 ** 3)
+  File "/home/student/anaconda3/envs/torch-a4000/lib/python3.9/site-packages/tornado/web.py", line 2109, in listen
+    server.listen(port, address)
+  File "/home/student/anaconda3/envs/torch-a4000/lib/python3.9/site-packages/tornado/tcpserver.py", line 151, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/home/student/anaconda3/envs/torch-a4000/lib/python3.9/site-packages/tornado/netutil.py", line 161, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 98] Address already in use
+Checking for scripts.
+It's Alive!
